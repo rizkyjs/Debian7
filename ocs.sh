@@ -6,16 +6,6 @@ if [ $USER != 'root' ]; then
 fi
 
 # initialisasi var
-export DEBIAN_FRONTEND=noninteractive
-OS=`uname -m`;
-
-if [[ -e /etc/debian_version ]]; then
-	#OS=debian
-	RCLOCAL='/etc/rc.local'
-else
-	echo "Anda tidak menjalankan script ini pada OS Debian"
-	exit
-fi
 
 vps="FNS";
 
